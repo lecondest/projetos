@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,10 +31,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -177,17 +179,33 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">Contato</a>
+        <li>
+  <a href="index.html">
+    <span class="ion ion-person"></span>
+     
+    Sobre nós
+  </a>
 </li>
 <li>
-  <a href="index.html#sobre-nos">Sobre nós</a>
-</li>        
-<li>
-  <a href="index.html#projetos">Projetos</a>
+  <a href="index.html#contato">
+    <span class="ion ion-email"></span>
+     
+    Contato
+  </a>
 </li>
 <li>
-  <a href="https://lecondest.github.io/neaest/atvs/atividades.html">Atividades</a>
+  <a href="index.html#projetos">
+    <span class="ion ion-eye"></span>
+     
+    Projetos
+  </a>
+</li>
+<li>
+  <a href="https://lecondest.github.io/neaest/atvs/atividades.html">
+    <span class="ion ion-flag"></span>
+     
+    Atividades
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -213,9 +231,21 @@ $(document).ready(function () {
 <hr />
 <div id="nucleo-de-ensino-e-aperfeicoamento-em-estatistica" class="section level2">
 <h2>Núcleo de Ensino e Aperfeiçoamento em Estatística</h2>
-<!-- Text comment -->
 <p>Seja bem a nossa página web.</p>
-
+<!-- Text comment -->
+<!-- theme: >cerulean<, flatly, sandstone, paper, default, united, etc -->
+<div id="sobre-nos" class="section level3">
+<h3>Sobre nós</h3>
+<p align="justify">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula velit eget justo vehicula, quis lacinia quam volutpat. Aliquam erat volutpat. Vivamus sit amet euismod metus, eget hendrerit mi. Ut placerat sodales velit, eget venenatis ex interdum nec. Donec porttitor dolor sit amet nulla tincidunt faucibus. Vivamus dictum nulla sed leo vestibulum, sed molestie ipsum sagittis. In viverra nisi aliquet leo vestibulum, id fermentum magna posuere. Nulla sit amet neque vitae quam varius lobortis at nec velit. Vivamus ac neque velit. Ut non venenatis augue, vitae egestas eros.
+</p>
+<ul>
+<li>Mmmmm.</li>
+<li>Mmmmm.</li>
+<li>Mmmmm.</li>
+</ul>
+<hr />
+</div>
 <div id="contato" class="section level3">
 <h3>Contato</h3>
 <ul>
@@ -226,38 +256,18 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-  
-<div id="sobre-nos" class="section level3">
-<h3>Sobre nós</h3>
-<p align="justify">
-  Lorem ipsu dolor sit amet, consectetur adipiscing elit. Fusce vehicula velit eget justo vehicula, quis lacinia quam volutpat. 
-  Aliquam erat volutpat. Vivamus sit amet euismod metus, eget hendrerit mi. Ut placerat sodales velit, eget venenatis ex 
-  interdum nec. Donec porttitor dolor sit amet nulla tincidunt faucibus. Vivamus dictum nulla sed leo vestibulum, sed molestie 
-  ipsum sagittis. In viverra nisi aliquet leo vestibulum, id fermentum magna posuere. Nulla sit amet neque vitae quam varius 
-  lobortis at nec velit. Vivamus ac neque velit. Ut non venenatis augue, vitae egestas eros.
-</p>
-<ul>
-<li>Mmmmm.</li>
-<li>Mmmmm.</li>
-<li>Mmmmm.</li>
-</ul>
-<hr />
-</div>
-
 <div id="projetos" class="section level3">
 <h3>Projetos</h3>
 <p align="justify">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula velit eget justo vehicula, quis lacinia quam volutpat. 
-  Aliquam erat volutpat. Vivamus sit amet euismod metus, eget hendrerit mi. Ut placerat sodales velit, eget venenatis ex 
-  interdum nec. Donec porttitor dolor sit amet nulla tincidunt faucibus. Vivamus dictum nulla sed leo vestibulum, sed molestie 
-  ipsum sagittis. In viverra nisi aliquet leo vestibulum, id fermentum magna posuere. Nulla sit amet neque vitae quam varius 
-  lobortis at nec velit. Vivamus ac neque velit. Ut non venenatis augue, vitae egestas eros.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula velit eget justo vehicula, quis lacinia quam volutpat. Aliquam erat volutpat. Vivamus sit amet euismod metus, eget hendrerit mi. Ut placerat sodales velit, eget venenatis ex interdum nec. Donec porttitor dolor sit amet nulla tincidunt faucibus. Vivamus dictum nulla sed leo vestibulum, sed molestie ipsum sagittis. In viverra nisi aliquet leo vestibulum, id fermentum magna posuere. Nulla sit amet neque vitae quam varius lobortis at nec velit. Vivamus ac neque velit. Ut non venenatis augue, vitae egestas eros.
+</p>
+<hr>
+<p align="right">
+<font color="blue">Copyright © 2019 NEAEST.</font>
 </p>
 </div>
 </div>
 
-<hr>
-<p align="right"><font color="blue">Copyright &copy; 2019 NEAEST.</font></p>
 
 
 
